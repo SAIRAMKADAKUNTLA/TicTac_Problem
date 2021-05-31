@@ -10,6 +10,7 @@ namespace Tic__Tac
             char Userletter =TicTacGame.Chooseuserletter();
             TicTacGame.Showboard(Board);
             TicTacGame.Getusermove(Board);
+            TicTacGame.Makemove(Board, Usermove, Userletter);
 
         }
     }

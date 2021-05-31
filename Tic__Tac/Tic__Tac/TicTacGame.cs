@@ -48,6 +48,13 @@ namespace Tic__Tac
         {
             return board[index] == '_';
         }
+        //UC5-check for freespace
+        public static void Makemove(char[] Board, int index, char Letter)
+        {
+            Boolean spacefree = isSpaceFree(Board, index);
+            if (spacefree) Board[index] = Letter;
+
+        }
 
     }
 }
