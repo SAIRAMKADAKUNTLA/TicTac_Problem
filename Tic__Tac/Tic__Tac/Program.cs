@@ -7,7 +7,8 @@ namespace Tic__Tac
         static void Main(string[] args)
         {
             char[] Board = TicTacGame.CreateBoard();
-            Console.WriteLine(Board);
+            char Userletter =TicTacGame.Chooseuserletter();
+
         }
     }
 }

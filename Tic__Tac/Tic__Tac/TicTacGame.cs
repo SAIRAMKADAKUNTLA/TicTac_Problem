@@ -17,6 +17,12 @@ namespace Tic__Tac
             return Board;
 
             } 
+        public static char Chooseuserletter() 
+        {
+            Console.WriteLine("Enter your letter");
+            char Userletter = Convert.ToChar(Console.ReadLine());
+            return char.ToUpper(Userletter);
+        }
 
         }
 
