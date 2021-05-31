@@ -17,11 +17,20 @@ namespace Tic__Tac
             return Board;
 
             } 
+        //UC2-chooseuserletter
         public static char Chooseuserletter() 
         {
             Console.WriteLine("Enter your letter");
             char Userletter = Convert.ToChar(Console.ReadLine());
             return char.ToUpper(Userletter);
+        }
+        //UC3-show board
+
+        public static void Showboard(char[] Board)
+        {
+            Console.WriteLine(" | " + Board[1] + " | " + Board[2] + " | " + Board[3] + " | ");
+            Console.WriteLine(" | " + Board[4] + " | " + Board[5] + " | " + Board[6] + " | ");
+            Console.WriteLine(" | " + Board[7] + " | " + Board[8] + " | " + Board[9] + " | ");
         }
 
         }
