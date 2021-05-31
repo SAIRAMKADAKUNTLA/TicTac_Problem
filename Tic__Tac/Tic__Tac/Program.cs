@@ -9,6 +9,7 @@ namespace Tic__Tac
             char[] Board = TicTacGame.CreateBoard();
             char Userletter =TicTacGame.Chooseuserletter();
             TicTacGame.Showboard(Board);
+            TicTacGame.Getusermove(Board);
 
         }
     }
