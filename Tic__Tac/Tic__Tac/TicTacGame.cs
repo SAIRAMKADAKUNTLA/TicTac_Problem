@@ -77,9 +77,31 @@ namespace Tic__Tac
             }
             return 0;
         }
-        
+        ///UC7-CheckforWinorTie
+        public   bool CheckWin(char[] b, char ch)
+        {
+            if (b[1] == ch && b[2] == ch && b[3] == ch)//top
+                return true;
+            if (b[4] == ch && b[5] == ch && b[6] == ch)//middle
+                return true;
+            if (b[7] == ch && b[8] == ch && b[9] == ch)//bottom
+                return true;
+            if (b[1] == ch && b[4] == ch && b[7] == ch)//left
+                return true;
+            if (b[2] == ch && b[5] == ch && b[8] == ch)//middle
+                return true;
+            if (b[3] == ch && b[6] == ch && b[9] == ch)//right
+                return true;
+            if (b[1] == ch && b[5] == ch && b[9] == ch)//diagonal
+                return true;
+            if (b[3] == ch && b[5] == ch && b[7] == ch)//diagonal
+                return true;
+            return false;
 
-        
+        }
+
+
+
 
     }
 }
