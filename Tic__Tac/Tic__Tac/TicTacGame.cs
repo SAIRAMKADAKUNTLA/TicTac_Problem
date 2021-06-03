@@ -55,6 +55,31 @@ namespace Tic__Tac
             if (spacefree) Board[index] = Letter;
 
         }
+        ///UC6-TossCheck
+        const int HEADS = 1;
+        const int TAILS = 0;
+        public enum Player { USER, COMPUTER };
+        public static int Toss()
+        {
+            Random random = new Random();
+            int rand = random.Next(2);
+            if (rand == HEADS)
+            {
+                Console.WriteLine("Computer plays first");
+                Console.WriteLine("computer inputs 'X' ");
+                return HEADS;
+            }
+            if (rand == TAILS)
+            {
+                Console.WriteLine("Player plays first");
+                Console.WriteLine("player inputs 'O' ");
+                return TAILS;
+            }
+            return 0;
+        }
+        
+
+        
 
     }
 }
